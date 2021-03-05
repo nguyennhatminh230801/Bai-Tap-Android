@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_item"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:id="@+id/Countries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FE7F3"
+        android:gravity="center"
+        android:text="Vietnam"
+        android:textSize="30sp"></TextView>
+
+    <LinearLayout
+        android:layout_below="@+id/Countries"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/NumberofCase"
+                    android:background="#E3D76E"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:text="Số ca mắc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:id="@+id/NumberofCase1"
+                    android:background="#E6D00B"
+                    android:textColor="#ffff"
+                    android:layout_below="@+id/NumberofCase"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:text="246000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TextView>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/NumberofDeath"
+                    android:background="#E46D64"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:text="Tử vong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/NumberofDeath1"
+                    android:background="#E4726A"
+                    android:textColor="#ffff"
+                    android:layout_below="@+id/NumberofDeath"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:text="246000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TextView>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/NumberofRelief"
+                    android:background="#69EF6E"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:text="Hồi phục"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/NumberofRelief1"
+                    android:background="#32F83A"
+                    android:textColor="#ffff"
+                    android:layout_below="@+id/NumberofRelief"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:text="246000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
