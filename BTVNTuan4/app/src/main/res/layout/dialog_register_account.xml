@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/showRegisterText"
+        android:textSize="30sp"
+        android:text="Đăng Ký Tài Khoản"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <EditText
+        android:background="@drawable/login_input"
+        android:id="@+id/edtUsernameDialog"
+        android:hint="Tài Khoản"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/showRegisterText"
+        android:layout_width="300dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+    </EditText>
+    <EditText
+        android:background="@drawable/login_input"
+        android:id="@+id/edtPasswordDialog"
+        android:hint="Mật Khảu"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtUsernameDialog"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+    </EditText>
+    <EditText
+        android:background="@drawable/login_input"
+        android:id="@+id/edtRePasswordDialog"
+        android:hint="Nhập Lại Mật Khảu"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtPasswordDialog"
+        android:layout_marginBottom="50dp"
+        android:inputType="textPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+    </EditText>
+    <Button
+        android:id="@+id/btnRegisterDialog"
+        android:background="@drawable/btn_login"
+        android:textColor="@color/white"
+        android:layout_below="@+id/edtRePasswordDialog"
+        android:layout_centerHorizontal="true"
+        android:text="Đăng Ký"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"></Button>
+</RelativeLayout>

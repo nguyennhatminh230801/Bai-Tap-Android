@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/showIconLogin"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+    <EditText
+        android:background="@drawable/login_input"
+        android:id="@+id/edtUsername"
+        android:hint="Tài Khoản"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/showIconLogin"
+        android:layout_width="300dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+    </EditText>
+    <EditText
+        android:background="@drawable/login_input"
+        android:id="@+id/edtPassword"
+        android:hint="Mật Khảu"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtUsername"
+        android:layout_marginBottom="30dp"
+        android:inputType="textPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="">
+    </EditText>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/edtPassword"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="Đăng Nhập"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_login">
+    </Button>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_toEndOf="@+id/btnLogin"
+        android:layout_below="@+id/edtPassword"
+        android:layout_centerHorizontal="true"
+        android:text="Đăng ký"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_login">
+    </Button>
+</RelativeLayout>
